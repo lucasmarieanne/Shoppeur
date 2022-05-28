@@ -34,11 +34,13 @@
 .home .home-container .home-content p {
   color: var(--light);
   padding-top: 20px;
+  font-weight: 300;
 }
 
 .home .home-container .home-content p a {
   color: var(--light);
   text-decoration: underline;
+  font-weight: 300;
 }
 
 .home .home-container .home-content .home-btn {
@@ -53,6 +55,30 @@
 
 .home .home-container .home-content .home-btn:hover {
   background-color: #c6c6c6;
+}
+
+@media screen and (max-width: 850px) {
+  .home .home-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 5%;
+  }
+  .home .home-container .home-content h1 {
+    font-size: 70px;
+    color: var(--light);
+    font-style: italic;
+    font-family: 'Tiro Devanagari Marathi', serif;
+  }
 }
 
 .peoples {
@@ -92,7 +118,7 @@
 }
 
 .peoples .woman-container .woman-content h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   font-weight: 500;
 }
@@ -137,7 +163,7 @@
 }
 
 .peoples .man-container .man-content h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   font-weight: 500;
 }
@@ -154,6 +180,91 @@
 
 .peoples .man-container .man-content a:hover {
   background-color: #c6c6c6;
+}
+
+@media screen and (max-width: 500px) {
+  .peoples .woman-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: start;
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), to(transparent)), url("../images/woman.jpeg");
+    background-image: linear-gradient(0deg, #000 0, transparent), url("../images/woman.jpeg");
+    background-position: center;
+    background-size: cover;
+    padding: 0 2%;
+    background-repeat: no-repeat;
+  }
+  .peoples .woman-container .woman-content {
+    padding: 30px;
+  }
+  .peoples .woman-container .woman-content h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+  }
+  .peoples .woman-container .woman-content a {
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    padding: 15px 40px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .peoples .woman-container .woman-content a:hover {
+    background-color: #c6c6c6;
+  }
+  .peoples .man-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: end;
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), to(transparent)), url("../images/man.jpeg");
+    background-image: linear-gradient(0deg, #000 0, transparent), url("../images/man.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 2%;
+  }
+  .peoples .man-container .man-content {
+    padding: 30px;
+  }
+  .peoples .man-container .man-content h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+  }
+  .peoples .man-container .man-content a {
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    padding: 15px 40px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .peoples .man-container .man-content a:hover {
+    background-color: #c6c6c6;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -197,7 +308,7 @@
 }
 
 .kids .kid-container .kid-content h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   font-weight: 500;
 }
@@ -214,6 +325,50 @@
 
 .kids .kid-container .kid-content a:hover {
   background-color: #c6c6c6;
+}
+
+@media screen and (max-width: 500px) {
+  .kids .kid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: start;
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #000), to(transparent)), url("../images/kid.jpeg");
+    background-image: linear-gradient(0deg, #000 0, transparent), url("../images/kid.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 2%;
+  }
+  .kids .kid-container .kid-content {
+    padding: 30px;
+  }
+  .kids .kid-container .kid-content h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+  }
+  .kids .kid-container .kid-content a {
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    background-color: white;
+    padding: 15px 40px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+  .kids .kid-container .kid-content a:hover {
+    background-color: #c6c6c6;
+  }
 }
 
 .services {
@@ -423,6 +578,7 @@ footer {
   background-color: black;
   height: 20vh;
   width: 100%;
+  padding: 0 5%;
 }
 
 footer h1 {
@@ -440,5 +596,39 @@ footer p {
 footer p a {
   color: white;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  footer footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+    padding: 0 5%;
+  }
+  footer footer h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    font-style: italic;
+  }
+  footer footer p {
+    padding-top: 20px;
+    color: white;
+    font-size: 16px;
+  }
+  footer footer p a {
+    color: white;
+    text-decoration: underline;
+  }
 }
 /*# sourceMappingURL=home.css.map */

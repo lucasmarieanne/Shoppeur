@@ -26,10 +26,12 @@
             p {
                 color: var(--light);
                 padding-top: 20px;
+                font-weight: 300;
     
                 a {
                     color: var(--light);
                     text-decoration: underline;
+                    font-weight: 300;
                 }
             }
     
@@ -46,6 +48,27 @@
                 }
             }
             
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        .home-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            padding: 60px 5%;
+
+            .home-content {
+                h1 {
+                    font-size: 70px;
+                    color: var(--light);
+                    font-style: italic;
+                    font-family: 'Tiro Devanagari Marathi', serif;
+                }
+            }
         }
     }
 }
@@ -75,7 +98,7 @@
             padding: 30px;
 
             h1 {
-                font-size: 50px;
+                font-size: 40px;
                 color: white;
                 font-weight: 500;
             }
@@ -112,7 +135,7 @@
             padding: 30px;
         
             h1 {
-                font-size: 50px;
+                font-size: 40px;
                 color: white;
                 font-weight: 500;
             }
@@ -127,6 +150,84 @@
         
                 &:hover {
                     background-color: rgb(198, 198, 198);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .woman-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-align: start;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0deg,#000 0,transparent), url('../images/woman.jpeg');
+            background-position: center;
+            background-size: cover;
+            padding: 0 2%;
+            background-repeat: no-repeat;
+    
+            .woman-content {
+                padding: 30px;
+    
+                h1 {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 500;
+                }
+    
+                a {
+                    margin-top: 20px;
+                    display: inline-block;
+                    color: black;
+                    font-size: 14px;
+                    background-color: white;
+                    padding: 15px 40px;
+                    transition: all 400ms;
+    
+                    &:hover {
+                        background-color: rgb(198, 198, 198);
+                    }
+                }
+            }
+        }
+
+        .man-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            text-align: end;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0deg,#000 0,transparent), url('../images/man.jpeg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 2%;
+    
+            .man-content {
+                padding: 30px;
+            
+                h1 {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 500;
+                }
+            
+                a {
+                    margin-top: 20px;
+                    display: inline-block;
+                    color: black;
+                    font-size: 14px;
+                    background-color: white;
+                    padding: 15px 40px;
+                    transition: all 400ms;
+            
+                    &:hover {
+                        background-color: rgb(198, 198, 198);
+                    }
                 }
             }
         }
@@ -162,7 +263,7 @@
             padding: 30px;
 
             h1 {
-                font-size: 50px;
+                font-size: 40px;
                 color: white;
                 font-weight: 500;
             }
@@ -177,6 +278,46 @@
 
                 &:hover {
                     background-color: rgb(198, 198, 198);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .kid-container {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            text-align: start;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(0deg,#000 0,transparent), url('../images/kid.jpeg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 0 2%;
+    
+            .kid-content {
+                padding: 30px;
+    
+                h1 {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: 500;
+                }
+    
+                a {
+                    margin-top: 20px;
+                    display: inline-block;
+                    color: black;
+                    font-size: 14px;
+                    background-color: white;
+                    padding: 15px 40px;
+                    transition: all 400ms;
+    
+                    &:hover {
+                        background-color: rgb(198, 198, 198);
+                    }
                 }
             }
         }
@@ -366,6 +507,7 @@ footer {
     background-color: rgb(0, 0, 0);
     height: 20vh;
     width: 100%;
+    padding: 0 5%;
 
     h1 {
         color: white;
@@ -381,6 +523,37 @@ footer {
         a {
             color: white;
             text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+            height: 20vh;
+            width: 100%;
+            padding: 0 5%;
+        
+            h1 {
+                color: white;
+                font-weight: 800;
+                font-size: 20px;
+                font-style: italic;
+            }
+        
+            p {
+                padding-top: 20px;
+                color: white;
+                font-size: 16px;
+        
+                a {
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
