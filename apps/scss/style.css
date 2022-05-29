@@ -8,7 +8,6 @@
 }
 
 .logo {
-  margin-right: auto;
   font-weight: 800;
   font-style: italic;
 }
@@ -31,9 +30,9 @@ header .header-container {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-shadow: 0 1px  black;
           box-shadow: 0 1px  black;
 }
@@ -61,7 +60,6 @@ header .nav-list li .nav-active {
 
 header .user {
   font-size: 14px;
-  margin-left: 40px;
   border: 1px black solid;
   padding: 10px 20px;
   -webkit-transition: all 400ms;
